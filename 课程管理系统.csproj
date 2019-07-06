@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AD60AD7F-F0AD-4E5E-9448-5FE8E455DB64}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>课程管理系统</RootNamespace>
+    <AssemblyName>课程管理系统</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="IrisSkin2">
+      <HintPath>..\..\..\Desktop\IrisSkin2sskpages\皮肤控件\IrisSkin2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DBHelper.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDelete.Designer.cs">
+      <DependentUpon>FormDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormScan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormScan.Designer.cs">
+      <DependentUpon>FormScan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormScore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormScore.Designer.cs">
+      <DependentUpon>FormScore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSelectAchievement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSelectAchievement.Designer.cs">
+      <DependentUpon>FormSelectAchievement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTeacher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTeacher.Designer.cs">
+      <DependentUpon>FormTeacher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4.Designer.cs">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormInsect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInsect.Designer.cs">
+      <DependentUpon>FormInsect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPrimary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPrimary.Designer.cs">
+      <DependentUpon>FormPrimary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSelectstudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSelectstudent.Designer.cs">
+      <DependentUpon>FormSelectstudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUpdate.Designer.cs">
+      <DependentUpon>FormUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form开班.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form开班.Designer.cs">
+      <DependentUpon>Form开班.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form预选.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form预选.Designer.cs">
+      <DependentUpon>Form预选.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="学生登录.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="学生登录.Designer.cs">
+      <DependentUpon>学生登录.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDelete.resx">
+      <DependentUpon>FormDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormScan.resx">
+      <DependentUpon>FormScan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormScore.resx">
+      <DependentUpon>FormScore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSelectAchievement.resx">
+      <DependentUpon>FormSelectAchievement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTeacher.resx">
+      <DependentUpon>FormTeacher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInsect.resx">
+      <DependentUpon>FormInsect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPrimary.resx">
+      <DependentUpon>FormPrimary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSelectstudent.resx">
+      <DependentUpon>FormSelectstudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUpdate.resx">
+      <DependentUpon>FormUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form开班.resx">
+      <DependentUpon>Form开班.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form预选.resx">
+      <DependentUpon>Form预选.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="学生登录.resx">
+      <DependentUpon>学生登录.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\IrisSkin2sskpages.zip" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1528112127657.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="images\student\201726705002.jpg" />
+    <Content Include="images\student\201726705003.jpg" />
+    <Content Include="images\student\201726705004.jpg" />
+    <Content Include="images\student\201726705005.jpg" />
+    <Content Include="images\student\201726705006.jpg" />
+    <Content Include="images\student\201726705008.jpg" />
+    <Content Include="images\student\201726705009.jpg" />
+    <Content Include="images\student\201726705010.jpg" />
+    <Content Include="images\student\201726705014.jpg" />
+    <Content Include="images\student\201726705015.jpg" />
+    <Content Include="images\student\201726705016.jpg" />
+    <Content Include="images\student\201726705017.jpg" />
+    <Content Include="images\student\201726705018.jpg" />
+    <Content Include="images\student\201726705019.jpg" />
+    <Content Include="images\student\201726705020.jpg" />
+    <Content Include="images\student\201726705021.jpg" />
+    <Content Include="images\student\201726705022.jpg" />
+    <Content Include="images\student\201726705023.jpg" />
+    <Content Include="images\student\201726705024.jpg" />
+    <Content Include="images\student\201726705025.jpg" />
+    <Content Include="images\student\201726705026.jpg" />
+    <Content Include="images\student\201726705027.jpg" />
+    <Content Include="images\student\201726705028.jpg" />
+    <Content Include="images\teacher\003524.jpg" />
+    <Content Include="images\teacher\003899.jpg" />
+    <Content Include="Properties\images\student\201726705002.jpg" />
+    <Content Include="Properties\images\student\201726705003.jpg" />
+    <Content Include="Properties\images\student\201726705004.jpg" />
+    <Content Include="Properties\images\student\201726705005.jpg" />
+    <Content Include="Properties\images\student\201726705006.jpg" />
+    <Content Include="Properties\images\student\201726705008.jpg" />
+    <Content Include="Properties\images\student\201726705009.jpg" />
+    <Content Include="Properties\images\student\201726705010.jpg" />
+    <Content Include="Properties\images\student\201726705014.jpg" />
+    <Content Include="Properties\images\student\201726705015.jpg" />
+    <Content Include="Properties\images\student\201726705016.jpg" />
+    <Content Include="Properties\images\student\201726705017.jpg" />
+    <Content Include="Properties\images\student\201726705018.jpg" />
+    <Content Include="Properties\images\student\201726705019.jpg" />
+    <Content Include="Properties\images\student\201726705020.jpg" />
+    <Content Include="Properties\images\student\201726705021.jpg" />
+    <Content Include="Properties\images\student\201726705022.jpg" />
+    <Content Include="Properties\images\student\201726705023.jpg" />
+    <Content Include="Properties\images\student\201726705024.jpg" />
+    <Content Include="Properties\images\student\201726705025.jpg" />
+    <Content Include="Properties\images\student\201726705026.jpg" />
+    <Content Include="Properties\images\student\201726705027.jpg" />
+    <Content Include="Properties\images\student\201726705028.jpg" />
+    <Content Include="Properties\images\teacher\003524.jpg" />
+    <None Include="Resources\003524.jpg" />
+    <None Include="Resources\v2-b4e1d990c989fd78d3e5bac0e0593255.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
